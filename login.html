@@ -15,9 +15,20 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 
-  <link rel="stylesheet" href="login.css"> 
+    <link rel="stylesheet" href="login.css"> 
 
 
+    <script>
+        function login() {
+
+            if (document.form.password.value =='nDs9nPbfYdV6BgZ' && document.form.username.value=='herley'){ 
+                document.form.submit(); 
+            } 
+            else{ 
+                alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+            } 
+        }
+    </script>
 </head>
 <body>
 <div class="container">
@@ -32,25 +43,25 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<form>
+				<form name="form" action="index.html">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username">
+						<input type="text" name="username" class="form-control" placeholder="username">
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
+						<input name="password" type="password" class="form-control" placeholder="password">
 					</div>
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn">
+						<input onclick="login()" value="Login" class="btn float-right login_btn">
 					</div>
 				</form>
 			</div>
