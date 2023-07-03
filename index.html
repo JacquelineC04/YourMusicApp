@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your MusicApp</title>
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- ----------- BOOTSTRAP ----------- -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.min.css">
+
+    <!-- ----------- MAIN ----------- -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+</head>
+
+<body>
+    <main>
+        <nav class="mainnav shadow navbar-expand-lg navbar navbar-dark bg-dark fixed-top" style="min-width: 350px">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-soundwave"></i> YourMusic App
+                </a>
+
+                <div>
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="bg-black text-white border-0 input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="albumes.html">Álbumes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="artistas.html">Artistas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="playlists.html">Playlists</a>
+                </li>
+                <img class="rounded-circle" src="images/06.jpg" style="width:40px;height:40px">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Heyler
+                      </a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-white" href="perfil.html"><i class="bi bi-person"></i> Perfil</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-white" href="login.html"><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+        <!--end navigation-->
+
+        <div class="hero-area text-white pt-5 mt-2">
+
+            <div class="nav-spacer"></div>
+
+            <ul class="hero-nav nav m-4 nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="text-white nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Recién guardados</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="text-white nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Para ti</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="text-white nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Tus playlists</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">01</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/06.jpg">
+                            <div class="ms-1">
+                                <div>Bocanada</div>
+                                <small>Gustavo Cerati</small>
+                            </div>
+                        </div>
+                        <div class="col-2">04:03 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">02</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/04.jpg">
+                            <div class="ms-1">
+                                <div>Habla Tu Espejo</div>
+                                <small>El Cuarteto de Nos</small>
+                            </div>
+                        </div>
+                        <div class="col-2">05:00 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">03</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/05.jpg">
+                            <div class="ms-1">
+                                <div>Lento</div>
+                                <small>Julieta Venegas</small>
+                            </div>
+                        </div>
+                        <div class="col-2">05:00 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">04</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/09.jpg">
+                            <div class="ms-1">
+                                <div>Cracker Island</div>
+                                <small>Gorillaz</small>
+                            </div>
+                        </div>
+                        <div class="col-2">05:00 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">05</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/08.jpg">
+                            <div class="ms-1">
+                                <div>Lámina Once</div>
+                                <small>El Cuarteto de Nos</small>
+                            </div>
+                        </div>
+                        <div class="col-2">05:00 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">06</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/10.jpg">
+                            <div class="ms-1">
+                                <div>STAURNO</div>
+                                <small>Rauw Alejandro</small>
+                            </div>
+                        </div>
+                        <div class="col-2">05:00 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">07</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/06.jpg">
+                            <div class="ms-1">
+                                <div>Rock y Baladas Latinoamericanas</div>
+                                <small>52 canciones</small>
+                            </div>
+                        </div>
+                        <div class="col-2">05:00 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">08</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/04.jpg">
+                            <div class="ms-1">
+                                <div>2010's House Party</div>
+                                <small>48 canciones</small>
+                            </div>
+                        </div>
+                        <div class="col-2">05:00 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">09</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/05.jpg">
+                            <div class="ms-1">
+                                <div>Chill Out - Música para relajarse</div>
+                                <small>68 canciones</small>
+                            </div>
+                        </div>
+                        <div class="col-2">05:00 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+
+                    <!--small song item-->
+                    <div class="song-small m-1 ms-4 col-md-6 row align-items-center">
+                        <div class="col-1 h3">10</div>
+                        <div class="col d-flex">
+                            <img class="song-small-img rounded m-1" src="images/14.jpg">
+                            <div class="ms-1">
+                                <div>Top 50 Best Hits of 2023</div>
+                                <small>28 canciones</small>
+                            </div>
+                        </div>
+                        <div class="col-2">05:00 <i class="bi bi-play"></i></div>
+                    </div>
+                    <!--end small song item-->
+                </div>
+            </div>
+
+
+        </div>
+        <!--end hero area-->
+        <h5 class="song-category-title mx-5 pt-4">Álbumes recién guardados<small class="float-end"></small></h5>
+        <section class="pt-2 p-4 mx-5 d-flex justify-content-center" style="flex-wrap: wrap;">
+
+
+            <!--album card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/04.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">Raro</div>
+                    <small class="text-muted">El Cuarteto de Nos</small>
+                </div>
+            </div>
+            <!--album card end-->
+
+            <!--album card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/05.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">Sí</div>
+                    <small class="text-muted">Julieta Venegas</small>
+                </div>
+            </div>
+            <!--album card end-->
+
+            <!--album card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/06.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">Obras Cumbres</div>
+                    <small class="text-muted">Soda Stereo</small>
+                </div>
+            </div>
+            <!--album card end-->
+
+            <!--album card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/07.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">A Contraluz</div>
+                    <small class="text-muted">La Vela Puerca</small>
+                </div>
+            </div>
+            <!--album card end-->
+
+            <!--album card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/08.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">SATURNO</div>
+                    <small class="text-muted">Rauw Alejandro</small>
+                </div>
+            </div>
+            <!--album card end-->
+
+            <!--album card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/09.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">Entren Los Que Quieran</div>
+                    <small class="text-muted">Calle 13</small>
+                </div>
+            </div>
+            <!--album card end-->
+
+            <!--album card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/11.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">Bocanada</div>
+                    <small class="text-muted">Gustavo Cerati</small>
+                </div>
+            </div>
+            <!--album card end-->
+
+            <!--album card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/13.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">After Hours</div>
+                    <small class="text-muted">The Weeknd</small>
+                </div>
+            </div>
+            <!--album card end-->
+
+            <!--album card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/14.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">Demon Days</div>
+                    <small class="text-muted">Gorillaz</small>
+                </div>
+            </div>
+            <!--album card end-->
+        </section>
+        <!-- end category area-->
+        <h5 class="song-category-title mx-5 pt-4">Tus playlists <small class="float-end"></small></h5>
+
+        <!-- start category area-->
+        <section class="pt-2 p-4 mx-5 d-flex justify-content-center" style="flex-wrap: wrap;">
+
+
+            <!--playlist card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/12.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">Rock y Baladas Latinoamericanas</div>
+                    <small class="text-muted">52 canciones</small>
+                </div>
+            </div>
+            <!--playlist card end-->
+
+            <!--playlist card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/13.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">80s</div>
+                    <small class="text-muted">10 canciones</small>
+                </div>
+            </div>
+            <!--playlist card end-->
+
+            <!--playlist card start-->
+            <div class="m-4" style="width: 200px;">
+                <div style="position: relative;">
+                    <img src="images/14.jpg" class="big-song-img rounded img-fluid">
+                    <a href="#">
+                        <div class="big-song-hover ">
+                            <i class="h1 bi bi-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="lead text-white">2010's House Party</div>
+                    <small class="text-muted">48 canciones</small>
+                </div>
+            </div>
+            <!--playlist card end-->
+        </section>
+        <!-- end category area-->
+
+    </main>
+    <!--end main area-->
+    <footer <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 footer-content">
+                <h3>Contáctanos</h3>
+                <p><strong>Autor:</strong> Heyler González</p>
+                <p><strong>Teléfono: </strong>+505 8643 0758</p>
+                <p><strong>Correo: </strong> heylersandigo@gmail.com</p>
+            </div>
+            <div class="col-md-4 col-sm-4 d-flex align-items-center flex-column">
+                <img class="logo" src="img/Logo.png" alt="logo">
+            </div>
+            <div class="footer-bottom">
+                <h5>© Todos los derechos reservados | 2023</h5>
+            </div>
+        </div>
+        </div>
+    </footer>
